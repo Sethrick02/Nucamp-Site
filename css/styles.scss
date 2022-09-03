@@ -4,6 +4,7 @@ $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #17A2B8;
 
 $body-font: "Open Sans", sans-serif;
 $header-font: "Lobster", cursive;
@@ -17,19 +18,13 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: $color-primary;
-}
+    color: $color-primary;}
 
-header {
-    h2 {
-        color: $color-pale;
+    header {
+        h2 {
+            color: $color-pale;
+        }
     }
-}
-
-.site-footer {
-    background-image: linear-gradient($color-pale, white);
-    padding: 20px 0;
-}
 
 .jumbotron {
     margin: 0;
@@ -38,33 +33,16 @@ header {
     color: white;
 }
 
-
-.row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
-
 .navbar {
     background-color: $color-mid;
-}
-
-.tab-content {
-    border: 1px solid #DDD;
-    border-top: none;
-    padding: 10px;
-}
-
-.carousel-caption {
-    background-color: $color-black-transparent;
 }
 
 .carousel {
     border: solid $color-secondary;
 }
 
-.hoverOver:hover {
-    background-color: #DDD;
+.carousel-caption {
+    background-color: $color-black-transparent;
 }
 
 #carouselButton {
@@ -74,3 +52,29 @@ header {
     z-index: 100;
 }
 
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.site-footer {
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+}
+
+#reserveModal {
+
+    .modal-header {
+        background-color: $color-teal;
+        color: white;
+    }
+}
+
+#loginModal {
+
+    .modal-header {
+        background-color: $color-mid;
+        color: white;
+    }
+}
